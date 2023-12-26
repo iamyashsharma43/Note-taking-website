@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-image: url(images/forest-5375005_1920.jpg);
+}
+/*Navigation Bar*/
+.nav-bar{
+    width: 100%;
+    height: 33px;
+    background-color:gray;
+    position: relative;
+    align-items: center;
+    opacity: 0.5;
+}
+.nav-element{
+    position: absolute;
+}
+/*Notes Container*/
+.notes-container{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    flex-wrap: wrap;
+}
+
+
+
+/*Notes box*/
+.notes-box{
+    position: relative;
+    background-color: khaki;
+    margin: 15px;
+    width: 250px;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: fit-content;
+}
+.notes-title{
+    display: flex;
+    width: 100%;
+    min-height: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(126, 117, 43);
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+.notes-main{
+    display: flex;
+    width: 100%;
+    min-height: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(160, 149, 68);
+    margin: 20px 0;
+}
+.notes-text{
+    width: 200px;
+    height: auto;
+}
+.notes-edit{
+    cursor: pointer;
+}
+.textarea{
+    width: 90%;
+    min-height: 20%;
+    margin: 5%;
+}
+.notes-hr{
+    position: absolute;
+    height: 0.5px;
+    width: 90%;
+    left: 5%;
+}
+.delete{
+    margin-left: 93%;
+    cursor: pointer;
+}
+
+
+/*Add Notes Box*/
+.add-notes-box{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px dashed gray;
+    justify-content: center;
+    align-items: center;
+}
+.add-notes-button{
+    cursor: pointer;
+}
+.add-notes-text{
+    font-weight: bold;
+    color: gray;
+}
+
+/*Side Menu Bar*/
+.side-menu{
+    width: 300px;
+    height: 95.5%;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    left: -325px;
+    top: 4.5%;
+    transition: all 0.5s;
+    border-right: rgb(31, 31, 31) solid;
+}
+.side-menu.open{
+    left: 0%;
+}
+.side-menu div{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}   
+.side-bar-image{
+    height: 23%;
+    width: 90%;
+    margin: 12.5px;
+    border-radius: 25px;
+    object-fit: scale-down;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+@media ( max-width: 580px) {
+    .notes-container{
+        justify-content: center;
+    }
+    html{
+        background-position: center;
+    }
+    .side-menu{
+        width: 100%;
+        left: -105%;
+    }
+}

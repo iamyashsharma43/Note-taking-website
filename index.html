@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <img src="icons/menu.svg" onclick="sideBar()" style="left: 0.5%; top: 10%; cursor: pointer;" class="nav-element">
+        <input id="search" type="text" placeholder="Search" style="width: 25%; height: 23px; left: 73%; top: 10%;" class="nav-element">
+    </nav>
+    <div id="main" class="notes-container">
+        <div id="add-notes-box" class="add-notes-box">
+            <a onclick="addNote()" class="add-notes-button"><img src="icons/plus-circle.svg"></a>
+            <div class="add-notes-text">Add New Note</div>
+        </div>
+    </div>
+    <div id="side-menu" class="side-menu">
+        <div>Change Background</div>
+        <img class="side-bar-image" src="images/forest-5375005_1920.jpg" onclick="changeBackground(this.src)">
+        <img class="side-bar-image" src="images/mountains-1112911_1920.jpg" onclick="changeBackground(this.src)">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
